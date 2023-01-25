@@ -6,7 +6,7 @@ canvas.height = window.innerHeight
 const context = canvas.getContext('2d')
 const frameCount = 200
 
-const currentFrame = (index) => `./cloud/${(index + 1).toString()}.png`
+const currentFrame = (index) => `./cloudy/${(index + 1).toString()}.jpg`
 
 const images = []
 let cloud = { frame: 0 }
