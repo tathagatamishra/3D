@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     caret-color: transparent;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -28,6 +28,7 @@ canvas {
     justify-content: center;
     align-items: center;
 }
+
 .text h1 {
     color: rgb(44, 199, 255);
     font-size: 10rem;
@@ -35,15 +36,28 @@ canvas {
 }
 
 .extra {
+    background-color: rgb(251, 253, 255);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
 }
+
 .extra h1 {
     text-shadow: 0 0 3px rgb(0, 0, 0);
     color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 5;
+}
+
+.x {
+    height: 800px;
+    width: 800px;
+    background: radial-gradient(circle, rgb(251, 253, 255), rgb(251, 253, 255), #ffffff00 410px);
+    border-radius: 100%;
+    position: absolute;
+    z-index: 4;
 }
 
 .git {
@@ -51,6 +65,7 @@ canvas {
     justify-content: center;
     align-items: center;
 }
+
 .git a {
     color: rgba(255, 255, 255, 0);
     font-size: 2rem;
