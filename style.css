@@ -43,7 +43,24 @@ canvas {
 }
 .extra h1 {
     text-shadow: 0 0 3px rgb(0, 0, 0);
-    color: black;
+    color: rgb(0, 0, 0);
+}
+
+.git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.git a {
+    color: rgba(255, 255, 255, 0);
+    font-size: 2rem;
+    text-decoration: none;
+    z-index: 2;
+    text-shadow: 0 0 3px rgb(125, 196, 255);
+}
+
+img {
+    height: 40px;
 }
 
 #preloader {
