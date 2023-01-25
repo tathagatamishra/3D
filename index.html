@@ -13,6 +13,8 @@
 
 <body>
 
+    <div id="preloader"></div>
+
     <div class="text"><h1>3D</h1></div>
     <canvas class="canvas"></canvas>
     <div class="extra">
@@ -32,6 +34,17 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="script.js"></script>
+
+
+    <script>
+        var loader = document.getElementById('preloader')
+
+        window.addEventListener('load', () => {
+            loader.style.display = 'none'
+        })
+    </script>
+
+
 </body>
 
 </html>
