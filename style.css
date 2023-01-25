@@ -47,17 +47,15 @@ canvas {
 .extra h1 {
     text-shadow: 0 0 3px rgb(0, 0, 0);
     color: rgb(0, 0, 0);
-    position: absolute;
     z-index: 5;
-}
-
-.x {
     height: 800px;
     width: 800px;
     background: radial-gradient(circle, rgb(251, 253, 255), rgb(251, 253, 255), #ffffff00 410px);
     border-radius: 100%;
-    position: absolute;
-    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
 }
 
 .git {
