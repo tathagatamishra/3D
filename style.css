@@ -48,7 +48,7 @@ canvas {
 
 #preloader {
     background: rgb(255, 255, 255) url(cloud.gif) no-repeat center;
-    background-size: 50%;
+    /* background-size: 80%; */
     height: 100vh;
     width: 100vw;
     position: fixed;
