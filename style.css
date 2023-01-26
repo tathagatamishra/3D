@@ -49,3 +49,13 @@ nav ul {
   top: 90%;
   transform: translate(-20%, -90%);
 }
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  z-index: 1;
+  position: absolute;
+  left: 8%;
+  top: 95%;
+  transform: translate(-8%, -95%);
+}
