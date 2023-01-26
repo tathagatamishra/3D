@@ -2,20 +2,50 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  caret-color: transparent;
 }
 
 body, html {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family:'Courier New', Courier, monospace;
-  caret-color: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
-  color: aliceblue;
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  height: 3rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.title {
+  color: white;
   z-index: 2;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  left: 20%;
+  top: 90%;
+  transform: translate(-20%, -90%);
 }
