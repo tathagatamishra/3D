@@ -16,6 +16,9 @@ canvas {
     object-fit: cover;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
 
 .text {
     position: fixed;
