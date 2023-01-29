@@ -33,6 +33,6 @@ function MovingTitle(writeText, interval, visibleLetters) {
     return instance
 }
 
-let title = new MovingTitle("P L A N A T E ------🪐------", 300, 100)
+let title = new MovingTitle(" P L A N E T ------ 🪐 ------ ", 300, 100)
 
 title.init()
