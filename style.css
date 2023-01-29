@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+}
+
+body,
+html {
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.webgl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    color: white;
+    z-index: 2;
+    position: relative;
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    height: 3rem;
+    left: 8%;
+    top: 19%;
+    transform: translate(-8%, -19%);
+}
+img:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 81, 0));
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.a1:hover {
+    color: rgb(219, 39, 255);
+    text-shadow: 0px 0px 10px #ad1fff, 0 0 10px rgb(98, 0, 255);
+}
+.a2:hover {
+    color: rgb(255, 33, 33);
+    text-shadow: 0px 0px 10px #FF0000, 0px 0px 10px #FF0000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    z-index: 1;
+    position: absolute;
+    left: 8%;
+    top: 95%;
+    transform: translate(-8%, -95%);
+}
+p:hover {
+    text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #ffffff;
+}
+
+#preloader {
+    background: #0A0A0A url(./images/rocket_loder.gif) no-repeat center;
+    /* background-size: 80%; */
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}

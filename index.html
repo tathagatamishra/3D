@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>P L A N E T</title>
+  <script src="title.js"></script>
+</head>
+
+<body>
+
+  <div id="preloader"></div>
+
+  <canvas class="webgl"> </canvas>
+
+  <nav>
+    <a class="sphere" href="/"><img src="./images/planet.png" alt="icon"></a>
+    <ul>
+      <li><a class="a1" href="https://github.com/tathagatamishra/3D/tree/ThreeJS-Sphere" target="_blank">GitHub</a></li>
+      <li><a class="a2" href="https://www.youtube.com/@vfxinvein" target="_blank">YouTube</a></li>
+    </ul>
+  </nav>
+  <p>Click / Drag / Scroll</p>
+
+  <script type="module" src="main.js"></script>
+  <script>
+    var loader = document.getElementById('preloader')
+
+    window.addEventListener('load', () => {
+      loader.style.display = 'none'
+    })
+  </script>
+
+</body>
+
+</html>
