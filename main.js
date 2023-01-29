@@ -64,7 +64,7 @@ scene.add(pointLit, ambLight)
 
 //* ------------Materials----------------
 
-const planetTexture = new THREE.TextureLoader().load('Jupiter_Map.jpg')
+const planetTexture = new THREE.TextureLoader().load('images/Jupiter_Map.jpg')
 const ringTexture = new THREE.TextureLoader().load('./images/2k_jupiter.jpg')
 
 
