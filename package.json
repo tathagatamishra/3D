@@ -12,9 +12,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
-    "canvas2image": "^1.0.5",
     "gsap": "^3.11.4",
-    "html2canvas": "^1.4.1",
     "three": "^0.149.0"
   }
 }
