@@ -15,14 +15,59 @@ const sizes = {
 }
 
 const camera = new THREE.PerspectiveCamera(50, sizes.width / sizes.height, 0.01, 2000)
-camera.position.set(5,0,28)
-camera.rotation.set(0,10,0)
+camera.position.set(10, 0, 28)
+camera.rotation.set(0, 15, 0)
 
 
-const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('.webgl') })
+const renderer = new THREE.WebGLRenderer({
+    canvas: document.querySelector('.webgl'),
+    preserveDrawingBuffer: true
+})
 
 renderer.setSize(window.innerWidth, window.innerHeight)
 renderer.setPixelRatio(window.devicePixelRatio)
+
+
+//^ -------------------------------------------
+//* -------------ScreenShot--------------------
+
+let strDownloadMime = "image/octet-stream"
+
+document.querySelector('.capture').addEventListener('click', saveAsImage)
+
+function saveAsImage() {
+
+    try {
+        let strMime = "image/jpeg"
+        let imgData = renderer.domElement.toDataURL(strMime)
+
+        saveFile(imgData.replace(strMime, strDownloadMime), "P L A N E T.jpg")
+
+    } catch (lol) {
+        console.log(lol)
+        return;
+    }
+}
+
+let saveFile = function (strData, filename) {
+
+    let link = document.createElement('a')
+
+    if (typeof link.download === 'string') {
+
+        document.body.appendChild(link); //!Firefox requires the link to be in the body
+        link.download = filename
+        link.href = strData
+        link.click();
+        document.body.removeChild(link); //!remove the link when done
+    }
+    else {
+        location.replace(uri);
+    }
+}
+
+//? https://codepen.io/shivasaxena/pen/QEzrrv
+//^ -------------------------------------------
 
 
 
@@ -59,8 +104,7 @@ const ambLight = new THREE.AmbientLight(0xffffff)
 ambLight.intensity = 0.05
 scene.add(pointLit, ambLight)
 
-// const skyBox = new THREE.TextureLoader().load('olena-sergienko-LHAJGaIU0I8-unsplash.jpg')
-// scene.background = skyBox
+// scene.background = new THREE.TextureLoader().load('public/stary_skyTexture.jpg')
 
 
 //* ------------Materials----------------
@@ -125,7 +169,7 @@ animRing.delay(4).timeScale(0.5).fromTo(ring.scale, { z: 6, x: 6, y: 6 }, { z: 1
 const animTxt = gsap.timeline({ defaults: { duration: 4 } })
 
 animTxt.fromTo('nav', { y: '-100%' }, { y: '0%' })
-animTxt.fromTo('p', { opacity: 0 }, { opacity: 1 })
+animTxt.fromTo('.capture', { opacity: 0 }, { opacity: 1 })
 
 
 
