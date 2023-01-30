@@ -15,7 +15,8 @@ const sizes = {
 }
 
 const camera = new THREE.PerspectiveCamera(50, sizes.width / sizes.height, 0.01, 2000)
-camera.position.z = 28
+camera.position.set(5,0,28)
+camera.rotation.set(0,10,0)
 
 
 const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('.webgl') })
@@ -39,11 +40,11 @@ controls.autoRotateSpeed = 0.2
 
 window.addEventListener('resize', () => {
 
-    //* Update Sizes ----
+    //^ Update Sizes ----
     sizes.width = window.innerWidth
     sizes.height = window.innerHeight
 
-    //* Update Camera ----
+    //^ Update Camera ----
     camera.updateProjectionMatrix()
     camera.aspect = sizes.width / sizes.height
     renderer.setSize(sizes.width, sizes.height)
@@ -105,7 +106,7 @@ Array(10000).fill().forEach(addStar)
 //* -----------Helpers-------------------
 
 // const lightHelper = new THREE.PointLightHelper(pointLit)
-// const gridHelper = new THREE.GridHelper(20, 50)
+// const gridHelper = new THREE.GridHelper(200, 50)
 // scene.add(lightHelper, gridHelper)
 
 
