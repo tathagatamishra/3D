@@ -45,9 +45,9 @@ https://vitejs.dev/
 
 ## REFERENCE & RESOURCE
 
-https://threejs.org/
+https://threejs.org
 
-https://vitejs.dev/
+https://vitejs.dev
 
 https://youtu.be/MlsV3hu84as
 
@@ -68,3 +68,5 @@ https://www.w3schools.com/jsref/prop_style_zindex.asp
 https://www.w3schools.com/css/css_image_transparency.asp
 
 https://fonts.google.com/specimen/Antonio?query=Antonio
+
+https://www.csestack.org/indent-first-all-lines-paragraph-html-css

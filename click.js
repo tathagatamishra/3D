@@ -10,12 +10,11 @@ function eye() {
         
         return a=0
     }
-
+    
     else {
 
         document.getElementById('one').style.zIndex='0'
         document.getElementById('two').style.zIndex='0'
-
 
         return a=1
     }

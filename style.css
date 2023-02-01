@@ -179,6 +179,7 @@ body:has(.capture:hover) #cap {
     color: #ffffff1f;
     font-family: 'Cousine', monospace;
     text-align: justify;
+    text-indent: 100px;
 }
 
 .hero2 p:hover {
