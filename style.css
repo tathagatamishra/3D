@@ -47,7 +47,7 @@ canvas {
     gap: 4rem;
 }
 
-img {
+.header img {
     height: 3rem;
     left: 8%;
     top: 19%;
@@ -55,7 +55,7 @@ img {
     opacity: 0.5;
 }
 
-img:hover {
+.header img:hover {
     opacity: 1;
     filter: drop-shadow(0 0 10px rgb(255, 81, 0));
 }
@@ -87,12 +87,12 @@ a {
     justify-content: space-between;
     width: 100vw;
     left: 50%;
-    top: 90%;
-    transform: translate(-50%, 90%);
+    top: 89%;
+    transform: translate(-50%, -89%);
 }
 
 .capture {
-    height: 2.7rem;
+    height: 2.5rem;
     opacity: 0.5;
 }
 
@@ -118,21 +118,21 @@ a {
     filter: drop-shadow(0 0 10px rgb(52, 187, 255));
 }
 
-.content:hover {
+/* .content:hover {
     opacity: 1;
     filter: drop-shadow(0 0 10px rgb(52, 187, 255));
     color: rgb(255, 0, 0);
-}
+} */
 
 body:has(.capture:hover) #cap {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #ffffff;
 }
 
-body:has(.content:hover) #exp {
+/* body:has(.content:hover) #exp {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #ffffff;
-}
+} */
 
 /*! https://stackoverflow.com/a/74816531/21084082 */
 
