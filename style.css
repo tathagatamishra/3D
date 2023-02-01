@@ -112,15 +112,21 @@ a {
 }
 
 .what {
+    width: 100%;
+    padding: 0rem 2rem;
     color: #ffffff1f;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
-}
-.what p:hover {
-    color: #74d3ff;
+    justify-content: space-between;
 }
 
+body:has(.capture:hover) #L {
+    color: #a1e1ff;
+}
+body:has(.content:hover) #R {
+    color: #a1e1ff;
+}
 
 /* *************************************** */
 
