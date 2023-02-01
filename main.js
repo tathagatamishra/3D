@@ -162,6 +162,9 @@ const animTxt = gsap.timeline({ defaults: { duration: 3 } })
 animTxt.fromTo('.header', { y: '-100%' }, { y: '0%' })
 animTxt.fromTo('.footer', { y: '70%' }, { y: '0%' })
 
+const information = gsap.timeline({ defaults: { duration: 8 } })
+information.delay(8).timeScale(0.5).fromTo('.what', { opacity: 0 }, { opacity: 1 })
+
 
 const opacity = gsap.timeline({ defaults: { duration: 2 } })
 opacity.delay(1.2).timeScale(0.5).fromTo('.opacity', { opacity: 0 }, { opacity: 1 })

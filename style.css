@@ -111,6 +111,16 @@ a {
     filter: drop-shadow(0 0 10px rgb(52, 187, 255));
 }
 
+.what {
+    color: #ffffff1f;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.what p:hover {
+    color: #74d3ff;
+}
+
 
 /* *************************************** */
 
