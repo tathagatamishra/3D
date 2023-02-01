@@ -1,9 +1,7 @@
 # 🪐  P  L  A  N  E  T  🪐
 
 Deployed on Netlify :  https://p-l-a-n-e-t.netlify.app/
-
-## `npm i`  -->  `npm run dev` 
-
+ 
 ## CONTROLS
 
 1. This is a 3D interactive website
@@ -43,6 +41,21 @@ Vite. js allows developers to set up a development environment for frameworks li
 
 https://vitejs.dev/
 
+
+### Run This Project On Your Local Device
+
+```sh
+git clone https://github.com/tathagatamishra/3D.git
+
+cd 3D
+
+git checkout PLANET
+
+npm i
+
+npm run dev
+```
+If everything went well, you should see [this](https://p-l-a-n-e-t.netlify.app/).
 
 ## REFERENCE & RESOURCE
 

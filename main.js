@@ -14,7 +14,8 @@ const sizes = {
     height: window.innerHeight
 }
 
-const camera = new THREE.PerspectiveCamera(50, sizes.width / sizes.height, 0.01, 2000)
+const camera = new THREE.PerspectiveCamera(40, sizes.width / sizes.height, 0.01, 2000)
+
 camera.position.set(10, 0, 28)
 camera.rotation.set(0, 15, 0)
 
@@ -150,22 +151,19 @@ Array(10000).fill().forEach(addStar)
 //* ---------Animation-------------------
 
 const animPlanet = gsap.timeline({ defaults: { duration: 10 } })
-
 animPlanet.delay(4).timeScale(0.5).fromTo(planet.scale, { z: 6, x: 6, y: 6 }, { z: 1, x: 1, y: 1 })
 
 
 const animRing = gsap.timeline({ defaults: { duration: 10 } })
-
 animRing.delay(4).timeScale(0.5).fromTo(ring.scale, { z: 6, x: 6, y: 6 }, { z: 1, x: 1, y: 1 })
 
 
 const animTxt = gsap.timeline({ defaults: { duration: 3 } })
-
 animTxt.fromTo('.header', { y: '-100%' }, { y: '0%' })
 animTxt.fromTo('.footer', { y: '70%' }, { y: '0%' })
 
-const opacity = gsap.timeline({ defaults: { duration: 2 } })
 
+const opacity = gsap.timeline({ defaults: { duration: 2 } })
 opacity.delay(1.2).timeScale(0.5).fromTo('.opacity', { opacity: 0 }, { opacity: 1 })
 
 
