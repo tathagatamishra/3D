@@ -1,4 +1,4 @@
-# P  L  A  N  E  T
+# 🪐  P  L  A  N  E  T  🪐
 
 Deployed on Netlify :  https://p-l-a-n-e-t.netlify.app/
 
@@ -6,6 +6,12 @@ Deployed on Netlify :  https://p-l-a-n-e-t.netlify.app/
 ## CONTROLS
 
 1. This is a 3D interactive website
+
+2. Planet 🪐 icon to reload 🔁 the page
+
+3. Satellite 🛰 icon to capture 📸 a photo of the planet 🪐
+
+4. Eye 👁 icon to enter to the 3D interactive mode 👽
 
 2. User can interact with mouse click & scroll
 
