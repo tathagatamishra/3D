@@ -13,8 +13,8 @@ function eye() {
     
     else {
 
-        document.getElementById('one').style.zIndex='0'
-        document.getElementById('two').style.zIndex='0'
+        document.getElementById('one').style.zIndex='-1'
+        document.getElementById('two').style.zIndex='-1'
 
         return a=1
     }
