@@ -121,11 +121,19 @@ a {
     justify-content: space-between;
 }
 
+.what p:hover {
+    color: #a1e1ff;
+    text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #0059ff, 0px 0px 40px #0084ff;
+}
+
 body:has(.capture:hover) #L {
     color: #a1e1ff;
+    text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #0059ff, 0px 0px 40px #0084ff;
 }
+
 body:has(.content:hover) #R {
     color: #a1e1ff;
+    text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #0059ff, 0px 0px 40px #0084ff;
 }
 
 /* *************************************** */
