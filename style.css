@@ -4,6 +4,7 @@
     box-sizing: border-box;
     caret-color: transparent;
     cursor: url();
+    user-select: none;
 }
 
 body,
@@ -187,24 +188,6 @@ h3:hover {
 
 .blank {
     width: 200%;
-}
-
-.hero2 {
-    z-index: 2;
-    position: absolute;
-    font-size: 2rem;
-    left: 10%;
-    top: 90%;
-    transform: translate(-10%, -90%);
-    padding: 2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-}
-
-.hero2 p {
-    color: #ffffff1f;
-    font-family: 'Antonio', sans-serif;
 }
 
 
