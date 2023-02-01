@@ -2,6 +2,7 @@
 
 Deployed on Netlify :  https://p-l-a-n-e-t.netlify.app/
 
+## `npm i`  -->  `npm run dev` 
 
 ## CONTROLS
 
