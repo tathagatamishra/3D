@@ -31,22 +31,15 @@ renderer.setPixelRatio(window.devicePixelRatio)
 //^ -------------------------------------------
 //* -------------ScreenShot--------------------
 
-let strDownloadMime = "image/octet-stream"
 
 document.querySelector('.capture').addEventListener('click', saveAsImage)
 
 function saveAsImage() {
-
-    try {
+    
         let strMime = "image/jpeg"
         let imgData = renderer.domElement.toDataURL(strMime)
 
-        saveFile(imgData.replace(strMime, strDownloadMime), "P L A N E T.jpg")
-
-    } catch (lol) {
-        console.log(lol)
-        return;
-    }
+        saveFile(imgData.replace(strMime), "P L A N E T.jpg")
 }
 
 let saveFile = function (strData, filename) {
@@ -166,11 +159,14 @@ const animRing = gsap.timeline({ defaults: { duration: 10 } })
 animRing.delay(4).timeScale(0.5).fromTo(ring.scale, { z: 6, x: 6, y: 6 }, { z: 1, x: 1, y: 1 })
 
 
-const animTxt = gsap.timeline({ defaults: { duration: 4 } })
+const animTxt = gsap.timeline({ defaults: { duration: 3 } })
 
-animTxt.fromTo('nav', { y: '-100%' }, { y: '0%' })
-animTxt.fromTo('.capture', { opacity: 0 }, { opacity: 1 })
+animTxt.fromTo('.header', { y: '-100%' }, { y: '0%' })
+animTxt.fromTo('.footer', { y: '70%' }, { y: '0%' })
 
+const opacity = gsap.timeline({ defaults: { duration: 2 } })
+
+opacity.delay(1.2).timeScale(0.5).fromTo('.opacity', { opacity: 0 }, { opacity: 1 })
 
 
 //* ----------Recursion------------------

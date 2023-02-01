@@ -37,3 +37,28 @@ Vite. js allows developers to set up a development environment for frameworks li
 https://vitejs.dev/
 
 
+## REFERENCE & RESOURCE
+
+https://threejs.org/
+
+https://vitejs.dev/
+
+https://youtu.be/MlsV3hu84as
+
+https://youtu.be/GJN7TemsZtY
+
+https://youtu.be/_OwJV2xL8M8
+
+https://youtu.be/Q7AOvWpIVHU
+
+https://youtu.be/YrE62Dzg4oM
+
+https://codepen.io/shivasaxena/pen/QEzrrv
+
+https://stackoverflow.com/a/74816531/21084082
+
+https://www.w3schools.com/jsref/prop_style_zindex.asp
+
+https://www.w3schools.com/css/css_image_transparency.asp
+
+https://fonts.google.com/specimen/Antonio?query=Antonio

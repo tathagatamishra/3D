@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     caret-color: transparent;
+    cursor: url();
 }
 
 body,
@@ -27,7 +28,10 @@ canvas {
     height: 100%
 }
 
-nav {
+
+/* **************************************** */
+
+.header {
     color: white;
     z-index: 2;
     position: relative;
@@ -36,47 +40,179 @@ nav {
     justify-content: space-between;
 }
 
-img {
-    height: 3rem;
-    left: 8%;
-    top: 19%;
-    transform: translate(-8%, -19%);
-}
-img:hover {
-    filter: drop-shadow(0 0 10px rgb(255, 81, 0));
-}
-
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.a1:hover {
-    color: rgb(219, 39, 255);
-    text-shadow: 0px 0px 10px #ad1fff, 0 0 10px rgb(98, 0, 255);
-}
-.a2:hover {
-    color: rgb(255, 33, 33);
-    text-shadow: 0px 0px 10px #FF0000, 0px 0px 10px #FF0000;
-}
-
-nav ul {
+.header ul {
     list-style: none;
     display: flex;
     gap: 4rem;
 }
 
+img {
+    height: 3rem;
+    left: 8%;
+    top: 19%;
+    transform: translate(-8%, -19%);
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgb(255, 81, 0));
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.502);
+}
+
+.a1:hover {
+    color: rgb(219, 39, 255);
+    text-shadow: 0px 0px 10px #ad1fff, 0 0 10px rgb(98, 0, 255), 0px 0px 80px #8400ff;
+}
+
+.a2:hover {
+    color: rgb(255, 33, 33);
+    text-shadow: 0px 0px 10px #FF0000, 0px 0px 10px #FF0000, 0px 0px 80px #ff0000;
+}
+
+
+/* ********************************* */
+
+.footer {
+    color: white;
+    z-index: 2;
+    position: absolute;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, 90%);
+}
 
 .capture {
     height: 2.7rem;
-    z-index: 1;
-    position: absolute;
-    left: 5%;
-    top: 96%;
-    transform: translate(-5%, -96%);
+    opacity: 0.5;
 }
+
+.content {
+    height: 2.5rem;
+    opacity: 0.5;
+}
+
+.explain {
+    padding: 0rem 2rem;
+    width: 90%;
+    left: 1%;
+    top: -10%;
+    transform: translate(-0.5%, 10%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0);
+}
+
 .capture:hover {
+    opacity: 1;
     filter: drop-shadow(0 0 10px rgb(52, 187, 255));
 }
+
+.content:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgb(52, 187, 255));
+    color: rgb(255, 0, 0);
+}
+
+body:has(.capture:hover) #cap {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #ffffff;
+}
+
+body:has(.content:hover) #exp {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #ffffff;
+}
+
+/*! https://stackoverflow.com/a/74816531/21084082 */
+
+/* *************************************** */
+
+.hero {
+    z-index: 2;
+    position: absolute;
+    font-size: 4rem;
+    left: 10%;
+    top: 20%;
+    transform: translate(-10%, -20%);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+h3 {
+    color: #ffffff1f;
+    font-family: 'Antonio', sans-serif;
+}
+
+h3:hover {
+    color: #919191;
+    text-shadow: 0px 0px 10px #000000, 0px 0px 20px #000000, 0px 0px 40px #000000;
+}
+
+.hero1 {
+    z-index: 2;
+    position: absolute;
+    font-size: 1.1rem;
+    left: 10%;
+    top: 50%;
+    transform: translate(-10%, -20%);
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.hero1 p {
+    color: #ffffff1f;
+    font-family: 'Cousine', monospace;
+    text-align: justify;
+}
+
+.hero1 p:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #000000, 0px 0px 10px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
+}
+
+.blank {
+    width: 200%;
+}
+
+.hero2 {
+    z-index: 2;
+    position: absolute;
+    font-size: 2rem;
+    left: 10%;
+    top: 90%;
+    transform: translate(-10%, -90%);
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.hero2 p {
+    color: #ffffff1f;
+    font-family: 'Antonio', sans-serif;
+}
+
+
+
+/*! ***************************** */
+/** ***************************** */
+/*^ ***************************** */
+
 
 #preloader {
     background: #0A0A0A url(/rocket_loder.gif) no-repeat center;

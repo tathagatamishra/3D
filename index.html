@@ -5,6 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="style.css">
 
   <title>P L A N E T</title>
@@ -19,22 +26,50 @@
 
   <canvas class="webgl"> </canvas>
 
-  <nav>
+  <nav class="header">
     <a class="sphere" href="/"><img src="/planet.png" alt="icon"></a>
     <ul>
       <li><a class="a1" href="https://github.com/tathagatamishra/3D/tree/PLANET" target="_blank">GitHub</a></li>
       <li><a class="a2" href="https://www.youtube.com/@vfxinvein" target="_blank">YouTube</a></li>
     </ul>
   </nav>
-  <img class="capture" src="/satellite capture.png"></img>
-  
+
+  <div class="hero" id="one">
+    <h3 id="txt" class="opacity">Experience <br>The Third Dimension</h3>
+    <!-- <h3>written in the stars</h3> -->
+  </div>
+  <div class="hero1" id="two">
+    <div class="blank"></div>
+    <p id="txt1" class="opacity">Time and space are relative rather than absolute. Even though they are inextricably
+      linked, space and time are perceived differently by sentient beings. That's because an object's movement and how
+      it experiences time is relative to other things around it. Events that occur at the same time for one observer
+      could occur at different times for another.</p>
+  </div>
+  <div class="hero2" id="three">
+    <p id="txt2" class="opacity">----------------------------------------</p>
+  </div>
+
+  <nav class="footer">
+
+    <img class="capture" src="/satellite capture.png">
+
+    <div class="explain">
+      <p id="cap">CAPTURE</p>
+      <p id="exp">EXPLORE</p>
+    </div>
+
+    <img class="content" onclick="show_hide()" src="/eye.png">
+
+  </nav>
+
 
 
   <!-- ****************************************************** -->
 
   <script type="module" src="main.js"></script>
+  <script src="click.js"></script>
   <script>
-    var loader = document.getElementById('preloader')
+    let loader = document.getElementById('preloader')
 
     window.addEventListener('load', () => {
       loader.style.display = 'none'
