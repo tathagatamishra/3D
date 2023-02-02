@@ -153,6 +153,7 @@ audioLoader.load( 'sounds/SpaceAmbientmusic.ogg',
 (buffer)=>{
     sound.setBuffer(buffer)
     sound.setVolume(0.05)
+    sound.setLoop(true)
     sound.play()
 });
 
