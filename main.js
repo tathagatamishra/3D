@@ -140,6 +140,22 @@ function addStar() {
 
 Array(10000).fill().forEach(addStar)
 
+//* -------------------------------------
+
+
+const listener = new THREE.AudioListener();
+camera.add(listener)
+
+const sound = new THREE.Audio( listener );
+
+const audioLoader = new THREE.AudioLoader();
+audioLoader.load( 'sounds/SpaceAmbientmusic.ogg', 
+(buffer)=>{
+    sound.setBuffer(buffer)
+    sound.setVolume(0.05)
+    sound.play()
+});
+
 
 //* -----------Helpers-------------------
 
