@@ -1,6 +1,6 @@
 # 🪐  P  L  A  N  E  T  🪐
 
-Deployed on Netlify :  https://p-l-a-n-e-t.netlify.app/
+### Deployed on Netlify :  https://p-l-a-n-e-t.netlify.app/
  
 ## CONTROLS
 
