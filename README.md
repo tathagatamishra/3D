@@ -2,7 +2,9 @@
 
 ### Deployed on Netlify &#160; &#10148; &#160; https://p-l-a-n-e-t.netlify.app/
 -----------------------------------------------------------
- 
+
+<img align='right' src="https://media.giphy.com/media/OOWxY4scvonIiypTYR/giphy.gif" width="230">
+
 ## CONTROLS
 
 1. This is a 3D interactive website
