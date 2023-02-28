@@ -23,9 +23,9 @@
 
 ## TECHNOLOGY
 
-1. Created using HTML, CSS, JAVASCRIPT, THREE.JS, VITE
+1. Created using `HTML`, `CSS`, `JAVASCRIPT`, `THREE.JS`, `VITE`
 
-2. 3D implemented using THREE.JS
+2. 3D implemented using `THREE.JS`
 
 
 ## THREE.JS
