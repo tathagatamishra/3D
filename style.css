@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header {
+    width: 100vw;
+}
+
+canvas {
+    background-color: #262524;
+    position: absolute;
+    z-index: 0;
+}
+
+.header h1 {
+    padding: 20px;
+    position: absolute;
+    color: #A988F2;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.search {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+._1 {
+    width: 50vw;
+    height: 10vh;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    bottom: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.input1 {
+    width: 99%;
+    height: 50%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+}
+
+
+.input2 {
+    width: 30%;
+    height: 52%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+}
