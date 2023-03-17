@@ -1,24 +1,35 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
 }
 
+html,
+body
+{
+    overflow: hidden;
+}
 
-body {
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: #262524;
+    z-index: 0;
+}
+
+
+.container {
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .header {
     width: 100vw;
 }
 
-canvas {
-    background-color: #262524;
-    position: absolute;
-    z-index: 0;
-}
 
 .header h1 {
     padding: 20px;
