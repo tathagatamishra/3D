@@ -190,7 +190,7 @@ const ghost2 = new THREE.PointLight('#0074FF', 1, 3)
 ghost2.position.y = 1
 scene.add(ghost2)
 
-const ghost3 = new THREE.PointLight('#00FF00', 1, 3)
+// const ghost3 = new THREE.PointLight('#00FF00', 1, 3)
 // scene.add(ghost3)
 
 
@@ -241,7 +241,7 @@ bush.add(grass_1, grass_2, grass_3, grass_4)
 const graves = new THREE.Group()
 scene.add(graves)
 
-const graveGeo = new THREE.BoxGeometry(.1, .6, .4)
+const graveGeo = new THREE.BoxGeometry(.1, .6, .35)
 const graveMat = new THREE.MeshStandardMaterial({ color: '#8C99B0' })
 
 for (let i = 0; i < 50; i++) {
@@ -263,7 +263,7 @@ for (let i = 0; i < 50; i++) {
 
 // Floor
 const floor = new THREE.Mesh(
-    new THREE.PlaneGeometry(30, 30, 1000, 1000),
+    new THREE.PlaneGeometry(30, 30, 700, 700),
     new THREE.MeshStandardMaterial({
         map: grasColorTex,
         aoMap: grasAOTex,
@@ -300,14 +300,26 @@ scene.add(ambientLight)
 // Directional light
 const moonLight = new THREE.DirectionalLight('#b9d5ff', 0.05)
 moonLight.position.set(2, 5, -4)
-
+// gui.add(moonLight, 'castShadow').name('Directional shadow')
+moonLight.shadow.mapSize.width = 300
+moonLight.shadow.mapSize.height = 300
+moonLight.shadow.camera.top = 5
+moonLight.shadow.camera.right = 5
+moonLight.shadow.camera.bottom = -5
+moonLight.shadow.camera.left = -5
+moonLight.shadow.camera.near = 0.5
+moonLight.shadow.camera.far = 10
+moonLight.shadow.radius = 5
 // gui.add(moonLight, 'intensity').min(0).max(1).step(0.001)
 // gui.add(moonLight.position, 'x').min(- 5).max(5).step(0.001)
 // gui.add(moonLight.position, 'y').min(- 5).max(5).step(0.001)
 // gui.add(moonLight.position, 'z').min(- 5).max(5).step(0.001)
 scene.add(moonLight)
 
-
+const dirLightHelper = new THREE.CameraHelper(moonLight.shadow.camera)
+scene.add(dirLightHelper)
+dirLightHelper.visible = false
+// gui.add(dirLightHelper, 'visible').name('directon light')
 
 // -------------------------
 
@@ -326,7 +338,7 @@ bush_4.castShadow = true
 
 ghost1.castShadow = true
 ghost2.castShadow = true
-ghost3.castShadow = true
+// ghost3.castShadow = true
 
 walls.castShadow = true
 roof.castShadow = true
@@ -336,6 +348,22 @@ chimni_2.castShadow = true
 
 floor.receiveShadow = true
 
+ghost1.shadow.mapSize.width = 300
+ghost2.shadow.mapSize.width = 300
+ghost1.shadow.mapSize.height = 300
+ghost2.shadow.mapSize.height = 300
+ghost1.shadow.camera.near = 0.1
+ghost2.shadow.camera.near = 0.1
+ghost1.shadow.camera.far = 10
+ghost2.shadow.camera.far = 10
+ghost1.shadow.radius = 5
+ghost2.shadow.radius = 5
+
+doorLight.shadow.mapSize.width = 300
+doorLight.shadow.mapSize.height = 300
+doorLight.shadow.camera.near = 0.1
+doorLight.shadow.camera.far = 10
+doorLight.shadow.radius = 5
 
 
 
