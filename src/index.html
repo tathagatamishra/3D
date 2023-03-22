@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <div id="preloader"></div>
+
     <canvas class="webgl"></canvas>
+
+
+    
     <script type="module" src="./script.js"></script>
+
+    <!-- My Preloader -->
+  <script>
+    var loader = document.getElementById('preloader')
+
+    window.addEventListener('load', () => {
+      loader.style.display = 'none'
+    })
+  </script>
+
+
 </body>
 </html>

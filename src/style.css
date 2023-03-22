@@ -2,18 +2,30 @@
 {
     margin: 0;
     padding: 0;
+    background: #262837;
 }
 
 html,
 body
 {
     overflow: hidden;
+    background: #262837;
 }
 
 .webgl
 {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     outline: none;
+    z-index: 0;
+}
+
+/* My Preloader */
+#preloader {
+    background: #262837;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
 }
