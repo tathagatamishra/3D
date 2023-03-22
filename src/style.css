@@ -10,6 +10,7 @@ body
 {
     overflow: hidden;
     background: #262837;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .webgl
@@ -21,11 +22,54 @@ body
     z-index: 0;
 }
 
+.header {
+    color: white;
+    z-index: 2;
+    position: relative;
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.header img {
+    height: 3rem;
+    left: 8%;
+    top: 19%;
+    transform: translate(-8%, -19%);
+    opacity: 0.5;
+}
+
+/* .header img:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgb(255, 81, 0));
+} */
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.502);
+}
+
+.a1:hover {
+    color: rgb(219, 39, 255);
+    text-shadow: 0px 0px 10px #ad1fff, 0 0 10px rgb(98, 0, 255), 0px 0px 80px #8400ff;
+}
+
+.a2:hover {
+    color: rgb(255, 33, 33);
+    text-shadow: 0px 0px 10px #FF0000, 0px 0px 10px #FF0000, 0px 0px 80px #ff0000;
+}
+
 /* My Preloader */
 #preloader {
     background: #262837;
     height: 100vh;
     width: 100vw;
     position: absolute;
-    z-index: 2;
+    z-index: 5;
 }
