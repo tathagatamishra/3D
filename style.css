@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: #F0DB4F;
+}
+
+form {
+    position: absolute;
+    z-index: 1;
+}
+
+/* My Preloader */
+#preloader {
+    background: #F0DB4F;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+}
