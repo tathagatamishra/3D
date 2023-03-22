@@ -347,6 +347,7 @@ floor.receiveShadow = true
 // Controls
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
+controls.enablePan = false
 controls.minDistance = 1;
 controls.maxDistance = 15;
 controls.minPolarAngle = 0;
@@ -354,60 +355,60 @@ controls.maxPolarAngle =  Math.PI * 0.49;
 
 
 
-// Limits
-const maxX = 10
-const minX = -10
-const maxZ = 10
-const minZ = -10
+// // Limits
+// const maxX = 10
+// const minX = -10
+// const maxZ = 10
+// const minZ = -10
 
-// State
-let positionX
-let positionZ
-let phi
-let theta
+// // State
+// let positionX
+// let positionZ
+// let phi
+// let theta
 
-controls.addEventListener('change', e => {
-    const x = controls.target.x
-    const z = controls.target.z
-    let shallWeUpdateAngle = false
+// controls.addEventListener('change', e => {
+//     const x = controls.target.x
+//     const z = controls.target.z
+//     let shallWeUpdateAngle = false
 
-    if (x < minX || x > maxX) {
-        controls.target.setX(x < minX ? minX : maxX)
-        camera.position.setX(positionX)
-        shallWeUpdateAngle = true
-    }
-    if (z < minZ || z > maxZ) {
-        controls.target.setZ(z < minZ ? minZ : maxZ)
-        camera.position.setZ(positionZ)
-        shallWeUpdateAngle = true
-    }
+//     if (x < minX || x > maxX) {
+//         controls.target.setX(x < minX ? minX : maxX)
+//         camera.position.setX(positionX)
+//         shallWeUpdateAngle = true
+//     }
+//     if (z < minZ || z > maxZ) {
+//         controls.target.setZ(z < minZ ? minZ : maxZ)
+//         camera.position.setZ(positionZ)
+//         shallWeUpdateAngle = true
+//     }
 
-    if (shallWeUpdateAngle) {
-        const distance = camera.position.distanceTo(controls.target)
-        camera.position.set(
-            distance * Math.sin(phi) * Math.sin(theta) + controls.target.x,
-            distance * Math.cos(phi) + controls.target.y,
-            distance * Math.sin(phi) * Math.cos(theta) + controls.target.z
-        )
-    }
+//     if (shallWeUpdateAngle) {
+//         const distance = camera.position.distanceTo(controls.target)
+//         camera.position.set(
+//             distance * Math.sin(phi) * Math.sin(theta) + controls.target.x,
+//             distance * Math.cos(phi) + controls.target.y,
+//             distance * Math.sin(phi) * Math.cos(theta) + controls.target.z
+//         )
+//     }
 
-    // Updating state
-    positionX = camera.position.x
-    positionZ = camera.position.z
-    phi = controls.getPolarAngle()
-    theta = controls.getAzimuthalAngle()
-}) 
+//     // Updating state
+//     positionX = camera.position.x
+//     positionZ = camera.position.z
+//     phi = controls.getPolarAngle()
+//     theta = controls.getAzimuthalAngle()
+// }) 
 
-controls.addEventListener( 'change', function(){
-    if (this.target.y < .2){
-        this.target.y = .2;
-        camera.position.y = .2;
-    } 
-    // else if (this.target.y > 6){
-    //     this.target.y = 6;
-    //     camera.position.y = 6;
-    // }
-})
+// controls.addEventListener( 'change', function(){
+//     if (this.target.y < .2){
+//         this.target.y = .2;
+//         camera.position.y = .2;
+//     } 
+//     // else if (this.target.y > 6){
+//     //     this.target.y = 6;
+//     //     camera.position.y = 6;
+//     // }
+// })
 
 
 
