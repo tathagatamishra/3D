@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3D TEXT</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-    <canvas class="webgl"></canvas>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D TEXT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="preloader"></div>
+
+  <canvas class="webgl"></canvas>
 
 
-    <form id="myForm">
+  <!-- <form id="myForm">
 
       <input type="text" id="gg" />
 
       <input type="submit" id="button" />
 
-    </form>
+    </form> -->
 
 
-    <script type="module" src="/main.js"></script>
+  <!-- My Preloader -->
+  <script>
+    var loader = document.getElementById('preloader')
 
-  </body>
+    window.addEventListener('load', () => {
+      loader.style.display = 'none'
+    })
+  </script>
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+
 </html>

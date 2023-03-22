@@ -118,20 +118,20 @@ function randomObj(geo, mat) {
         return Math.random() * (max - min) + min;
     }
 
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 2000; i++) {
 
         const object3D = new THREE.Mesh(geo, mat)
 
         object3D.position.set(
-            (Math.random() - 0.5) * 15,
-            (Math.random() - 0.5) * 15,
-            (Math.random() - 0.5) * 15)
+            (Math.random() - 0.5) * 50,
+            (Math.random() - 0.5) * 30,
+            (Math.random() - 0.5) * 50)
 
         object3D.rotation.x = Math.random() * Math.PI,
             object3D.rotation.y = Math.random() * Math.PI,
             object3D.rotation.z = Math.random() * Math.PI
 
-        let scale = randomRange(.2, 1)
+        let scale = randomRange(.2, 1.5)
         object3D.scale.set(scale, scale, scale)
 
         scene.add(object3D)
@@ -164,6 +164,10 @@ const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
 controls.autoRotate = true
 controls.autoRotateSpeed = 0.1
+controls.enableDamping = true
+controls.minDistance = 1;
+controls.maxDistance = 30;
+controls.enablePan = false
 
 
 

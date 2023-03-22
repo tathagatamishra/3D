@@ -2,12 +2,14 @@
 {
     margin: 0;
     padding: 0;
+    background-color: #F0DB4F;
 }
 
 html,
 body
 {
     overflow: hidden;
+    background-color: #F0DB4F;
 }
 
 .webgl
@@ -20,10 +22,10 @@ body
     background-color: #F0DB4F;
 }
 
-form {
+/* form {
     position: absolute;
     z-index: 1;
-}
+} */
 
 /* My Preloader */
 #preloader {
