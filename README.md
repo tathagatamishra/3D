@@ -1,11 +1,16 @@
-# 3D
-<img align='left' src="https://media.giphy.com/media/jpyc96qzPcpUs/giphy.gif" width="230">
-<h1>3D IMPLEMENTATION ON WEBPAGES</h1>
+# Three.js Journey
 
-### TECHNOLOGIES 
+## Setup
+Download [Node.js](https://nodejs.org/en/download/).
+Run this followed commands:
 
-`ThreeJS` `React Fiber` `CSS` `HTML` `Green Shock` `Web GL`
+``` bash
+# Install dependencies (only the first time)
+npm install
 
-### OVERVIEW
+# Run the local server at localhost:8080
+npm run dev
 
-This repository consist of multiple 3D website projects. I used Three.js in most of the projects.
+# Build for production in the dist/ directory
+npm run build
+```
