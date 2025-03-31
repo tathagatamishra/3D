@@ -1,6 +1,6 @@
-# 3D
+# 3D IMPLEMENTATION ON WEBPAGES
 <img align='left' src="https://media.giphy.com/media/jpyc96qzPcpUs/giphy.gif" width="230">
-<h1>3D IMPLEMENTATION ON WEBPAGES</h1>
+<!-- <h1>3D IMPLEMENTATION ON WEBPAGES</h1> -->
 
 ### TECHNOLOGIES 
 
